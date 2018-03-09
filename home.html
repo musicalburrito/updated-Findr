@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" type = "text/css" href ="home.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="populatedd.js"></script>-->
+    <title> Occupation and Housing Prices </title>
+</head>
+
+<body id="home">
+    <div id="title">
+        Findr
+    </div>
+<button type="button" class="btn btn-lg outline" data-toggle="modal" data-target="#myModal" id="aboutBtn">About</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">About this Website</h4>
+      </div>
+      <div class="modal-body">
+        <p>Our website is a resource for people to discover areas in the United States and view the housing price to salary ratio for them. 
+            <br/><br/>This is useful as while searching for an area to work in, the salary is not the only consideration in mind. 
+            Other factors, such as cost of living and housing must be taken into account.<br/><br/>
+            Our tool provides job seekers with a resource to compare the ratios of the average salary for a user-chosen industry to the average house cost in an area <br/>
+            <br/>
+            <b> KEY </b><br/>
+            Red : Unfavorable <br/>
+            Beige : Passable <br/>
+            Green : Favorable <br/>
+            </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <div class="input-group" id="dropdownWrapper">
+        <div class="input-group-btn">
+            <form action="/retID" method="POST">
+                <button type="button" class="btn btn-primary dropdown-toggle" type="submit" data-toggle="dropdown" id="dropbutton"> Select your desired industry.
+                    <span class="caret"></span>
+                </button>
+                <ul id="optionlist" class="dropdown-menu scrollable-menu">
+                    <li onclick="location.href = './mappages/110000.html';" id="110000"> <a href="#">Management</a></li>
+                    <li onclick="location.href = './mappages/130000.html';" id="130000"> <a href="#">Business and Financial</a></li>
+                    <li onclick="location.href = './mappages/150000.html';" id="150000"> <a href="#">Computer and Mathematical</a></li>
+                    <li onclick="location.href = './mappages/170000.html';" id="170000"> <a href="#">Architecture and Engineering</a></li>
+                    <li onclick="location.href = './mappages/210000.html';" id="210000"> <a href="#">Community and Social Service</a></li>
+                    <li onclick="location.href = './mappages/230000.html';" id="230000"> <a href="#">Legal</a></li>
+                    <li onclick="location.href = './mappages/250000.html';" id="250000"> <a href="#">Education, Training, and Library</a></li>
+                    <li onclick="location.href = './mappages/270000.html';" id="270000"> <a href="#">Arts, Design, Entertainment, Sports, and Media</a></li>
+                    <li onclick="location.href = './mappages/290000.html';" id="290000"> <a href="#">Healthcare Practioner and Technical</a></li>
+                    <li onclick="location.href = './mappages/310000.html';" id="310000"> <a href="#">Healthcare Support</a></li>
+                    <li onclick="location.href = './mappages/330000.html';" id="330000"> <a href="#">Protective Service</a></li>
+                    <li onclick="location.href = './mappages/350000.html';" id="350000"> <a href="#">Food Preparation and Serving</a></li>
+                    <li onclick="location.href = './mappages/370000.html';" id="370000"> <a href="#">Building and Ground Cleaning and Maintenance</a></li>
+                    <li onclick="location.href = './mappages/390000.html';" id="390000"> <a href="#">Personal Care and Service</a></li>
+                    <li onclick="location.href = './mappages/410000.html';" id="410000"> <a href="#">Sales</a></li>
+                    <li onclick="location.href = './mappages/430000.html';" id="430000"> <a href="#">Office and Administrative Support</a></li>
+                    <li onclick="location.href = './mappages/470000.html';" id="470000"> <a href="#">Construction and Extraction</a></li>
+                    <li onclick="location.href = './mappages/490000.html';" id="490000"> <a href="#">Installation, Maintenance, and Repair</a></li>
+                    <li onclick="location.href = './mappages/510000.html';" id="510000"> <a href="#">Production</a></li>
+                    <li onclick="location.href = './mappages/530000.html';" id="530000"> <a href="#">Transportation and Material Moving</a></li>
+                </ul>
+                <script>
+                    function retID(str) {
+                        console.log(str);
+                    }
+                    var a = '{{ listofstuff[1] }}'
+                </script>
+            </form>
+        </div>
+    </div>
+</body>

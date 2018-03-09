@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="input-group">
+
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Select your desired job.
+            <span class="caret"></span>
+        </button>
+        <ul id="demolist" class="dropdown-menu">
+            <li onclick=retID(this.id) id="110000"> <a href="#">Management</a></li>
+            <li onclick=retID(this.id) id="130000"> <a href="#">Business and Financial</a></li>
+            <li onclick=retID(this.id) id="150000"> <a href="#">Computer and Mathematical</a></li>
+            <li onclick=retID(this.id) id="170000"> <a href="#">Architecture and Engineering</a></li>
+            <li onclick=retID(this.id) id="210000"> <a href="#">Community and Social Service</a></li>
+            <li onclick=retID(this.id) id="230000"> <a href="#">Legal</a></li>
+            <li onclick=retID(this.id) id="250000"> <a href="#">Education, Training, and Library</a></li>
+            <li onclick=retID(this.id) id="270000"> <a href="#">Arts, Design, Entertainment, Sports, and Media</a></li>
+            <li onclick=retID(this.id) id="290000"> <a href="#">Healthcare Practioner and Technical</a></li>
+            <li onclick=retID(this.id) id="310000"> <a href="#">Healthcare Support</a></li>
+            <li onclick=retID(this.id) id="330000"> <a href="#">Protective Service</a></li>
+            <li onclick=retID(this.id) id="350000"> <a href="#">Food Preparation and Serving</a></li>
+            <li onclick=retID(this.id) id="370000"> <a href="#">Building and Ground Cleaning and Maintenance</a></li>
+            <li onclick=retID(this.id) id="390000"> <a href="#">Personal Care and Service</a></li>
+            <li onclick=retID(this.id) id="410000"> <a href="#">Sales</a></li>
+            <li onclick=retID(this.id) id="430000"> <a href="#">Office and Administrative Support</a></li>
+            <li onclick=retID(this.id) id="470000"> <a href="#">Construction and Extraction</a></li>
+            <li onclick=retID(this.id) id="490000"> <a href="#">Installation, Maintenance, and Repair</a></li>
+            <li onclick=retID(this.id) id="510000"> <a href="#">Production</a></li>
+            <li onclick=retID(this.id) id="530000"> <a href="#">Transportation and Material Moving</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function getList() {
+        console.log("hello");
+    }
+    function retID(str) {
+        console.log(str);
+    }
+
+
+</script>
+</body>
+</html>

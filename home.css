@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+#home {
+    background: url('city.jpg') no-repeat center center fixed;
+    width:1%;
+    height:auto;
+    margin: 0 auto;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('city.jpg');
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('city.jpg');
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('city.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('city.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.modal-header {
+    color: #fff;
+    padding:18px 15px;
+    border-bottom:5px solid #eee;
+    background-color: dimgray;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+
+.modal-content {
+  background-color: dimgrey;
+  
+}
+.modal-body {
+    border-bottom:5px solid #eee;
+    background-color: white;
+}
+
+ .modal-backdrop {
+   background-color:dimgrey;
+}
+ 
+#title {
+    position: absolute;
+    top: 25%;
+    left: 42%;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 52px;    
+    color: snow;
+}
+#select-occupation {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color:black;
+    position: relative;
+}
+
+#dropdownWrapper {
+    position: fixed;
+    top: 50%;
+    left: 35%;
+}
+
+#aboutBtn   {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+}
+
+.btn:focus {
+  outline: none;
+}
+#input-group    {
+    height: 50px;
+   overflow: auto;
+}
+
+#dropbutton {
+    width: 357px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.btn.transparent {
+    background: transparent;
+    color: #F2F2F2;
+
+    border: 2px solid #A9A9A9;
+    /*border: linear-gradient(to right, #0f0, #00f);*/
+}
+
+
+.btn.outline {
+	/*background: none;
+	padding: 12px 22px;*/
+    background: transparent;
+    color: #FFFFFF;
+
+    border: 2px solid #A9A9A9;
+}
+
+.btn-primary.outline {
+	border: 2px solid #0099cc;
+	color: #0099cc;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+	color: #33a6cc;
+	border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+	border-color: #007299;
+	color: #007299;
+	box-shadow: none;
+}
